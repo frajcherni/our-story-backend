@@ -1,0 +1,549 @@
+{
+  "gifts": [
+    {
+      "id": "g_1c7d69b63a",
+      "slug": "our-story",
+      "reference": "OS-0001",
+      "status": "sealed",
+      "tempHash": null,
+      "tempSalt": null,
+      "passHash": "9204960b11844409d051d9ad6b2d7c7bee3746c11f690676426dd7f142578792",
+      "passSalt": "f4c955fc121054f8e7b6c1d731e70e0e",
+      "title": "Our Story",
+      "subtitle": "Everything that was hidden inside is here now — kept, and still beating.",
+      "message": "Some stories are written.\nOurs is felt.",
+      "createdAt": "2026-08-30T14:16:06.717Z",
+      "updatedAt": "2026-08-30T14:16:06.718Z",
+      "openedAt": "2026-09-25T14:49:31.110Z",
+      "opens": 134
+    },
+    {
+      "id": "g_a0bf3a9c99",
+      "slug": "our-story-2",
+      "reference": "TEST",
+      "status": "sealed",
+      "tempHash": null,
+      "tempSalt": null,
+      "passHash": "fbf4762e1684c5cb7db481ec2e9c49a236524f19d2730818a93a29c867b49cfa",
+      "passSalt": "5141388ec1701e6846d18f53fea6ebeb",
+      "title": "our story",
+      "subtitle": "nehebk barcha barcha",
+      "message": "nhebek",
+      "createdAt": "2026-08-30T14:37:19.068Z",
+      "updatedAt": "2026-09-18T15:51:09.772Z",
+      "openedAt": "2026-09-25T15:15:54.117Z",
+      "opens": 29
+    },
+    {
+      "id": "g_62e560b341",
+      "slug": "7keyetna",
+      "reference": "123",
+      "status": "draft",
+      "tempHash": "fc8e2506e8df9a999d1076bd8e42ccaf933356eb93e0197d91a18abc7909a343",
+      "tempSalt": "72ca23fed5fff5e813378a787840b8b6",
+      "passHash": null,
+      "passSalt": null,
+      "title": "7keyetna",
+      "subtitle": "",
+      "message": "",
+      "createdAt": "2026-09-18T15:49:03.002Z",
+      "updatedAt": "2026-09-18T15:49:25.664Z",
+      "openedAt": null,
+      "opens": 0
+    }
+  ],
+  "memories": [
+    {
+      "id": "m_3b3b9fb36a",
+      "giftId": "g_1c7d69b63a",
+      "kind": "photo",
+      "position": 0,
+      "title": "The first photograph",
+      "description": "Before we knew this would become everything.",
+      "date": "The beginning",
+      "text": "",
+      "mediaUrl": "/memories/1.jpg",
+      "thumbnail": "/memories/1.jpg",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_f7b3fb0291",
+      "giftId": "g_1c7d69b63a",
+      "kind": "note",
+      "position": 1,
+      "title": "A thought",
+      "description": "They stay, quietly, long after the day is gone.",
+      "date": "",
+      "text": "Some moments are impossible to forget.",
+      "mediaUrl": "",
+      "thumbnail": "",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_0fd03920b7",
+      "giftId": "g_1c7d69b63a",
+      "kind": "photo",
+      "position": 2,
+      "title": "That evening",
+      "description": "The light was low and nothing else mattered.",
+      "date": "Golden hour",
+      "text": "",
+      "mediaUrl": "/memories/2.jpg",
+      "thumbnail": "/memories/2.jpg",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_e241bf59c4",
+      "giftId": "g_1c7d69b63a",
+      "kind": "photo",
+      "position": 3,
+      "title": "Somewhere far",
+      "description": "A place that only means something because you were there.",
+      "date": "On the road",
+      "text": "",
+      "mediaUrl": "/memories/4.jfif",
+      "thumbnail": "/memories/4.jfif",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_75b42ad946",
+      "giftId": "g_1c7d69b63a",
+      "kind": "note",
+      "position": 4,
+      "title": "Between us",
+      "description": "Every one of them has your name on it.",
+      "date": "",
+      "text": "I stopped counting the days and started counting the moments.",
+      "mediaUrl": "",
+      "thumbnail": "",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_794f97f674",
+      "giftId": "g_1c7d69b63a",
+      "kind": "photo",
+      "position": 5,
+      "title": "Laughing at nothing",
+      "description": "The kind of joy that has no reason and needs none.",
+      "date": "An ordinary day",
+      "text": "",
+      "mediaUrl": "/memories/5.webp",
+      "thumbnail": "/memories/5.webp",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_5eb2b9996d",
+      "giftId": "g_1c7d69b63a",
+      "kind": "note",
+      "position": 6,
+      "title": "Quietly",
+      "description": "",
+      "date": "",
+      "text": "You are my favourite place to go when my mind searches for peace.",
+      "mediaUrl": "",
+      "thumbnail": "",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_bcaac645ac",
+      "giftId": "g_1c7d69b63a",
+      "kind": "photo",
+      "position": 7,
+      "title": "Still here",
+      "description": "Through everything, and after everything.",
+      "date": "Us",
+      "text": "",
+      "mediaUrl": "/memories/img5.jpeg",
+      "thumbnail": "/memories/img5.jpeg",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_94e476419d",
+      "giftId": "g_1c7d69b63a",
+      "kind": "photo",
+      "position": 8,
+      "title": "The small things",
+      "description": "A hand, a look, a second that lasted longer than it should.",
+      "date": "Details",
+      "text": "",
+      "mediaUrl": "/memories/img2.jpeg",
+      "thumbnail": "/memories/img2.jpeg",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_491a07471c",
+      "giftId": "g_1c7d69b63a",
+      "kind": "note",
+      "position": 9,
+      "title": "A promise",
+      "description": "Without hesitation, and without an ending.",
+      "date": "",
+      "text": "If I had to choose again, I would choose you. Every single time.",
+      "mediaUrl": "",
+      "thumbnail": "",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_72977e90c3",
+      "giftId": "g_1c7d69b63a",
+      "kind": "photo",
+      "position": 10,
+      "title": "Tonight",
+      "description": "And every night that follows.",
+      "date": "Now",
+      "text": "",
+      "mediaUrl": "/memories/img3.jpeg",
+      "thumbnail": "/memories/img3.jpeg",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_687d74d3e9",
+      "giftId": "g_1c7d69b63a",
+      "kind": "note",
+      "position": 11,
+      "title": "Still writing",
+      "description": "It only has a next one.",
+      "date": "",
+      "text": "Our story has no last page.",
+      "mediaUrl": "",
+      "thumbnail": "",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:16:06.718Z"
+    },
+    {
+      "id": "m_aad5665f77",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "photo",
+      "position": 0,
+      "title": "",
+      "description": "",
+      "date": "",
+      "text": "",
+      "mediaUrl": "/media/235a17fab08f96af.jpg",
+      "thumbnail": "/media/235a17fab08f96af.jpg",
+      "mimeType": "image/jpeg",
+      "file": "235a17fab08f96af.jpg",
+      "size": 143174,
+      "createdAt": "2026-08-30T14:53:20.053Z"
+    },
+    {
+      "id": "m_667d85b0f9",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "photo",
+      "position": 1,
+      "title": "",
+      "description": "",
+      "date": "",
+      "text": "",
+      "mediaUrl": "/media/9c50e2c908c4f007.jpg",
+      "thumbnail": "/media/9c50e2c908c4f007.jpg",
+      "mimeType": "image/jpeg",
+      "file": "9c50e2c908c4f007.jpg",
+      "size": 77285,
+      "createdAt": "2026-08-30T14:53:33.648Z"
+    },
+    {
+      "id": "m_7a368a972c",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "photo",
+      "position": 2,
+      "title": "",
+      "description": "",
+      "date": "",
+      "text": "",
+      "mediaUrl": "/media/d07c0c79724a8b12.jpg",
+      "thumbnail": "/media/d07c0c79724a8b12.jpg",
+      "mimeType": "image/jpeg",
+      "file": "d07c0c79724a8b12.jpg",
+      "size": 72687,
+      "createdAt": "2026-08-30T14:53:42.626Z"
+    },
+    {
+      "id": "m_1ea536705b",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "photo",
+      "position": 3,
+      "title": "",
+      "description": "",
+      "date": "",
+      "text": "",
+      "mediaUrl": "/media/f53e576e925b6bf5.jpg",
+      "thumbnail": "/media/f53e576e925b6bf5.jpg",
+      "mimeType": "image/jpeg",
+      "file": "f53e576e925b6bf5.jpg",
+      "size": 84357,
+      "createdAt": "2026-08-30T14:53:51.842Z"
+    },
+    {
+      "id": "m_d9be392935",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "photo",
+      "position": 4,
+      "title": "",
+      "description": "",
+      "date": "",
+      "text": "",
+      "mediaUrl": "/media/cc22f16202bf4492.jpg",
+      "thumbnail": "/media/cc22f16202bf4492.jpg",
+      "mimeType": "image/jpeg",
+      "file": "cc22f16202bf4492.jpg",
+      "size": 92163,
+      "createdAt": "2026-08-30T14:54:02.839Z"
+    },
+    {
+      "id": "m_73107130f3",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "photo",
+      "position": 5,
+      "title": "",
+      "description": "",
+      "date": "",
+      "text": "",
+      "mediaUrl": "/media/045d55478fa406b0.jpg",
+      "thumbnail": "/media/045d55478fa406b0.jpg",
+      "mimeType": "image/jpeg",
+      "file": "045d55478fa406b0.jpg",
+      "size": 64795,
+      "createdAt": "2026-08-30T14:54:16.069Z"
+    },
+    {
+      "id": "m_aaaa109dc2",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "note",
+      "position": 6,
+      "title": "Barcha hob",
+      "description": "",
+      "date": "",
+      "text": "nhebek barcha w nmout 3lik <3",
+      "mediaUrl": "",
+      "thumbnail": "",
+      "mimeType": "",
+      "file": null,
+      "size": 0,
+      "createdAt": "2026-08-30T14:54:51.352Z"
+    },
+    {
+      "id": "m_df4cb5a653",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "photo",
+      "position": 7,
+      "title": "na3tik 3inaya",
+      "description": "nhebek",
+      "date": "nhebek barcha",
+      "text": "",
+      "mediaUrl": "/media/5799fcefb4804406.jpg",
+      "thumbnail": "/media/5799fcefb4804406.jpg",
+      "mimeType": "image/jpeg",
+      "file": "5799fcefb4804406.jpg",
+      "size": 67527,
+      "createdAt": "2026-09-18T15:51:09.772Z"
+    }
+  ],
+  "moments": [
+    {
+      "id": "t_62df204fe2",
+      "giftId": "g_1c7d69b63a",
+      "position": 0,
+      "year": "2022",
+      "title": "Where it all started",
+      "description": "A first message, a first look, the beginning of everything that followed."
+    },
+    {
+      "id": "t_cc896fbc51",
+      "giftId": "g_1c7d69b63a",
+      "position": 1,
+      "year": "2023",
+      "title": "More memories",
+      "description": "Days that turned into habits, and habits that turned into a life."
+    },
+    {
+      "id": "t_2103bb3095",
+      "giftId": "g_1c7d69b63a",
+      "position": 2,
+      "year": "2024",
+      "title": "Our favourite moments",
+      "description": "The year we stopped imagining the future and started building it."
+    },
+    {
+      "id": "t_ce84dda921",
+      "giftId": "g_1c7d69b63a",
+      "position": 3,
+      "year": "2025",
+      "title": "Still writing our story…",
+      "description": "Quieter, deeper, and somehow more certain than before."
+    },
+    {
+      "id": "t_4eec37ef3e",
+      "giftId": "g_1c7d69b63a",
+      "position": 4,
+      "year": "2026",
+      "title": "And this is only the beginning.",
+      "description": "Everything until now was just the first chapter."
+    },
+    {
+      "id": "t_4ef2e77dee",
+      "giftId": "g_a0bf3a9c99",
+      "position": 0,
+      "year": "2024",
+      "title": "awel marra ritek",
+      "description": "habitek men wa9tha"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "JWPsDYgk9DQWPkVUA5NEbhk3AcaEweaC",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:24:41.675Z"
+    },
+    {
+      "token": "6Jn9riAJ7qe3fb7QTbyJjNxdQNsRAY8G",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:27:32.639Z"
+    },
+    {
+      "token": "ejzghsWbSVXMh8nFNM3fWDt6qB9N4yza",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:29:13.696Z"
+    },
+    {
+      "token": "xUKeVREkfLbrafK97kUsUveq63yZvDdZ",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:30:34.731Z"
+    },
+    {
+      "token": "qFMbssH7YaiFigs77e47yvnq35tayA6d",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:32:20.664Z"
+    },
+    {
+      "token": "Y62YtCKNB2c7UqpptYgbjgifHgxRVy5Y",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:33:53.792Z"
+    },
+    {
+      "token": "89fqwmM67ztxb8RcGFe2AMZqcxEmTd4x",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:34:50.011Z"
+    },
+    {
+      "token": "NgFPWDdEqdzxU2xxmkjNjpnkYFN4EkY8",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:37:39.089Z"
+    },
+    {
+      "token": "dK3AfQgXWfRVjvzysQRcaYN8HLs6RAtX",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:39:10.655Z"
+    },
+    {
+      "token": "fVG585WhQs2eVuFy4jpik2jCbKBLkvdD",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:40:52.168Z"
+    },
+    {
+      "token": "wpFZLsYmhbjsUM3PFnSjtc2HxXVd33D3",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:41:45.011Z"
+    },
+    {
+      "token": "te7CUudkhj5U4dJgpAQ8HKGRczGD78BD",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:43:04.161Z"
+    },
+    {
+      "token": "JyyB8ZprMsc7z3xzNW5xGVRciYNac3LT",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:43:43.727Z"
+    },
+    {
+      "token": "KXETi68Kna2mbkEYU2XL8t4rj7urJfdg",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:44:48.439Z"
+    },
+    {
+      "token": "xHBJvJQwg8acyv7pexCnhCTdxTrWd2CE",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:46:12.417Z"
+    },
+    {
+      "token": "ymyPKkPRnBVjpFxtBRZG94j9pNjtEMsr",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:47:03.899Z"
+    },
+    {
+      "token": "tA9GMKCFCfE3bNCL9K5GjpJmrkxZMdVn",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:47:51.963Z"
+    },
+    {
+      "token": "fkwmwQjswC8dYx66kdE7BVsd8nSDDVm5",
+      "giftId": "g_1c7d69b63a",
+      "kind": "view",
+      "expiresAt": "2026-09-25T20:49:31.110Z"
+    },
+    {
+      "token": "K9LJTa6gBbLYY6pY9BJXta8pbLcchNwx",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "builder",
+      "expiresAt": "2026-09-26T03:15:08.133Z"
+    },
+    {
+      "token": "VmvbbknEdhSr6Ju9Rxkj6KbAAZbjp3cf",
+      "giftId": "g_a0bf3a9c99",
+      "kind": "view",
+      "expiresAt": "2026-09-25T21:15:54.117Z"
+    }
+  ]
+}
