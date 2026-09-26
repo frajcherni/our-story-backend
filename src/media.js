@@ -42,14 +42,17 @@ function kindOf(file) {
    it into the database. A file this size sitting in RAM for the
    length of one request is the same cost multer's diskStorage always
    paid to stream it there in the first place. */
+/* Two files at most: the memory itself, and — for a photograph or a film —
+   the small still the browser made of it before sending, so the strip and
+   the grid never have to decode the big one. */
 const receive = multer({
   storage: multer.memoryStorage(),
-  limits: { fileSize: Math.max(config.limits.image, config.limits.video, config.limits.audio), files: 1 },
+  limits: { fileSize: Math.max(config.limits.image, config.limits.video, config.limits.audio), files: 2 },
   fileFilter: (_req, file, done) => {
     if (kindOf(file)) return done(null, true)
     done(new Error('That kind of file cannot be added — send a photo, a video or a sound.'))
   },
-}).single('media')
+}).fields([{ name: 'media', maxCount: 1 }, { name: 'thumb', maxCount: 1 }])
 
 /** Delete a file we own. An id that was never stored is not an error. */
 function removeFile(id) {
@@ -64,7 +67,13 @@ function removeFile(id) {
  */
 function upload(req, res, next) {
   receive(req, res, (err) => {
-    if (!err) return next()
+    if (!err) {
+      /* Back to the one-file shape the routes are written against, with the
+         still — when the browser managed to make one — alongside it. */
+      req.file = req.files?.media?.[0] || null
+      req.thumb = req.files?.thumb?.[0] || null
+      return next()
+    }
     if (err.code === 'LIMIT_FILE_SIZE') {
       const biggest = Math.max(config.limitsMb.image, config.limitsMb.video, config.limitsMb.audio)
       return res.status(400).json({ error: `El fichier kbir barcha — a9sa 7aja tnajjem tzid hiya ${biggest} MB.` })

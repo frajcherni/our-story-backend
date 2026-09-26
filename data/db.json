@@ -14,8 +14,8 @@
       "message": "Some stories are written.\nOurs is felt.",
       "createdAt": "2026-08-30T14:16:06.717Z",
       "updatedAt": "2026-08-30T14:16:06.718Z",
-      "openedAt": "2026-09-25T14:49:31.110Z",
-      "opens": 134
+      "openedAt": "2026-09-25T17:58:12.881Z",
+      "opens": 136
     },
     {
       "id": "g_a0bf3a9c99",
@@ -66,6 +66,7 @@
       "thumbnail": "/memories/1.jpg",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -82,6 +83,7 @@
       "thumbnail": "",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -98,6 +100,7 @@
       "thumbnail": "/memories/2.jpg",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -114,6 +117,7 @@
       "thumbnail": "/memories/4.jfif",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -130,6 +134,7 @@
       "thumbnail": "",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -146,6 +151,7 @@
       "thumbnail": "/memories/5.webp",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -162,6 +168,7 @@
       "thumbnail": "",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -178,6 +185,7 @@
       "thumbnail": "/memories/img5.jpeg",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -194,6 +202,7 @@
       "thumbnail": "/memories/img2.jpeg",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -210,6 +219,7 @@
       "thumbnail": "",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -226,6 +236,7 @@
       "thumbnail": "/memories/img3.jpeg",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -242,6 +253,7 @@
       "thumbnail": "",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:16:06.718Z"
     },
@@ -258,6 +270,7 @@
       "thumbnail": "/media/235a17fab08f96af.jpg",
       "mimeType": "image/jpeg",
       "file": "235a17fab08f96af.jpg",
+      "thumbFile": null,
       "size": 143174,
       "createdAt": "2026-08-30T14:53:20.053Z"
     },
@@ -274,6 +287,7 @@
       "thumbnail": "/media/9c50e2c908c4f007.jpg",
       "mimeType": "image/jpeg",
       "file": "9c50e2c908c4f007.jpg",
+      "thumbFile": null,
       "size": 77285,
       "createdAt": "2026-08-30T14:53:33.648Z"
     },
@@ -290,6 +304,7 @@
       "thumbnail": "/media/d07c0c79724a8b12.jpg",
       "mimeType": "image/jpeg",
       "file": "d07c0c79724a8b12.jpg",
+      "thumbFile": null,
       "size": 72687,
       "createdAt": "2026-08-30T14:53:42.626Z"
     },
@@ -306,6 +321,7 @@
       "thumbnail": "/media/f53e576e925b6bf5.jpg",
       "mimeType": "image/jpeg",
       "file": "f53e576e925b6bf5.jpg",
+      "thumbFile": null,
       "size": 84357,
       "createdAt": "2026-08-30T14:53:51.842Z"
     },
@@ -322,6 +338,7 @@
       "thumbnail": "/media/cc22f16202bf4492.jpg",
       "mimeType": "image/jpeg",
       "file": "cc22f16202bf4492.jpg",
+      "thumbFile": null,
       "size": 92163,
       "createdAt": "2026-08-30T14:54:02.839Z"
     },
@@ -338,6 +355,7 @@
       "thumbnail": "/media/045d55478fa406b0.jpg",
       "mimeType": "image/jpeg",
       "file": "045d55478fa406b0.jpg",
+      "thumbFile": null,
       "size": 64795,
       "createdAt": "2026-08-30T14:54:16.069Z"
     },
@@ -354,6 +372,7 @@
       "thumbnail": "",
       "mimeType": "",
       "file": null,
+      "thumbFile": null,
       "size": 0,
       "createdAt": "2026-08-30T14:54:51.352Z"
     },
@@ -370,6 +389,7 @@
       "thumbnail": "/media/5799fcefb4804406.jpg",
       "mimeType": "image/jpeg",
       "file": "5799fcefb4804406.jpg",
+      "thumbFile": null,
       "size": 67527,
       "createdAt": "2026-09-18T15:51:09.772Z"
     }
@@ -424,126 +444,5 @@
       "description": "habitek men wa9tha"
     }
   ],
-  "sessions": [
-    {
-      "token": "JWPsDYgk9DQWPkVUA5NEbhk3AcaEweaC",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:24:41.675Z"
-    },
-    {
-      "token": "6Jn9riAJ7qe3fb7QTbyJjNxdQNsRAY8G",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:27:32.639Z"
-    },
-    {
-      "token": "ejzghsWbSVXMh8nFNM3fWDt6qB9N4yza",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:29:13.696Z"
-    },
-    {
-      "token": "xUKeVREkfLbrafK97kUsUveq63yZvDdZ",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:30:34.731Z"
-    },
-    {
-      "token": "qFMbssH7YaiFigs77e47yvnq35tayA6d",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:32:20.664Z"
-    },
-    {
-      "token": "Y62YtCKNB2c7UqpptYgbjgifHgxRVy5Y",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:33:53.792Z"
-    },
-    {
-      "token": "89fqwmM67ztxb8RcGFe2AMZqcxEmTd4x",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:34:50.011Z"
-    },
-    {
-      "token": "NgFPWDdEqdzxU2xxmkjNjpnkYFN4EkY8",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:37:39.089Z"
-    },
-    {
-      "token": "dK3AfQgXWfRVjvzysQRcaYN8HLs6RAtX",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:39:10.655Z"
-    },
-    {
-      "token": "fVG585WhQs2eVuFy4jpik2jCbKBLkvdD",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:40:52.168Z"
-    },
-    {
-      "token": "wpFZLsYmhbjsUM3PFnSjtc2HxXVd33D3",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:41:45.011Z"
-    },
-    {
-      "token": "te7CUudkhj5U4dJgpAQ8HKGRczGD78BD",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:43:04.161Z"
-    },
-    {
-      "token": "JyyB8ZprMsc7z3xzNW5xGVRciYNac3LT",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:43:43.727Z"
-    },
-    {
-      "token": "KXETi68Kna2mbkEYU2XL8t4rj7urJfdg",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:44:48.439Z"
-    },
-    {
-      "token": "xHBJvJQwg8acyv7pexCnhCTdxTrWd2CE",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:46:12.417Z"
-    },
-    {
-      "token": "ymyPKkPRnBVjpFxtBRZG94j9pNjtEMsr",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:47:03.899Z"
-    },
-    {
-      "token": "tA9GMKCFCfE3bNCL9K5GjpJmrkxZMdVn",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:47:51.963Z"
-    },
-    {
-      "token": "fkwmwQjswC8dYx66kdE7BVsd8nSDDVm5",
-      "giftId": "g_1c7d69b63a",
-      "kind": "view",
-      "expiresAt": "2026-09-25T20:49:31.110Z"
-    },
-    {
-      "token": "K9LJTa6gBbLYY6pY9BJXta8pbLcchNwx",
-      "giftId": "g_a0bf3a9c99",
-      "kind": "builder",
-      "expiresAt": "2026-09-26T03:15:08.133Z"
-    },
-    {
-      "token": "VmvbbknEdhSr6Ju9Rxkj6KbAAZbjp3cf",
-      "giftId": "g_a0bf3a9c99",
-      "kind": "view",
-      "expiresAt": "2026-09-25T21:15:54.117Z"
-    }
-  ]
+  "sessions": []
 }

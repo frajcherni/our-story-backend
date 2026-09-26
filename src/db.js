@@ -27,7 +27,8 @@
      }
 
      memory { id, giftId, kind, position, title, description, date,
-              text, mediaUrl, mimeType, file, size, createdAt }
+              text, mediaUrl, thumbnail, mimeType, file, thumbFile,
+              size, createdAt }
 
      moment { id, giftId, position, year, title, description }
 
@@ -112,6 +113,7 @@ function makeMemory(input = {}, position = 0) {
     thumbnail: input.thumbnail || input.mediaUrl || '',
     mimeType: input.mimeType || '',
     file: input.file || null,
+    thumbFile: input.thumbFile || null,
     size: input.size || 0,
     createdAt: input.createdAt || nowIso(),
   }

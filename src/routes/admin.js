@@ -117,7 +117,9 @@ router.delete('/gifts/:id', (req, res) => {
   /* The files first: once the rows are gone there is nothing left to
      say which files on disk were ever ours. */
   for (const memory of db.state.memories) {
-    if (memory.giftId === gift.id && memory.file) media.removeFile(memory.file)
+    if (memory.giftId !== gift.id) continue
+    if (memory.file) media.removeFile(memory.file)
+    if (memory.thumbFile) media.removeFile(memory.thumbFile)
   }
   db.state.memories = db.state.memories.filter((m) => m.giftId !== gift.id)
   db.state.moments = db.state.moments.filter((t) => t.giftId !== gift.id)

@@ -43,6 +43,9 @@ const forBuilder = (m) => ({
   text: m.text,
   mediaUrl: m.mediaUrl,
   thumbnail: m.thumbnail || m.mediaUrl,
+  /* No still of its own means it was added before the workshop started
+     resizing, so the story is decoding the full original everywhere. */
+  heavy: Boolean(m.file) && !m.thumbFile && (m.kind === 'photo' || m.kind === 'video'),
   size: m.size,
   createdAt: m.createdAt,
 })
@@ -154,8 +157,11 @@ router.post('/:slug/memories', media.upload, (req, res, next) => {
   }
 
   /* Only now — session and size both good — does the file actually
-     get written into the database. */
+     get written into the database, along with the small still the browser
+     made of it. Without that still the strip and the grid would be
+     decoding the full photograph to fill a 64px heart. */
   const saved = req.file ? media.saveFile(req.file) : null
+  const still = req.thumb ? media.saveFile(req.thumb) : null
 
   const memory = db.makeMemory({
     giftId: gift.id,
@@ -165,7 +171,8 @@ router.post('/:slug/memories', media.upload, (req, res, next) => {
     date: capped(String(body.date || '').trim(), 'date'),
     text,
     mediaUrl: saved?.url || '',
-    thumbnail: saved?.url || '',
+    thumbnail: still?.url || saved?.url || '',
+    thumbFile: still?.id || null,
     mimeType: req.file?.mimetype || '',
     file: saved?.id || null,
     size: req.file?.size || 0,
@@ -191,6 +198,52 @@ router.patch('/:slug/memories/:id', guard, (req, res) => {
   answer(res, req.gift)
 })
 
+/* ── swapping a memory's file for a lighter one ────────────────────
+   Same picture, fewer pixels. A photograph added before the workshop
+   started resizing them is a phone's full 4032×3024 original, and the
+   story decodes that to fill a 64px heart. The browser downloads it,
+   resizes it and sends it back through here; the words, the order and
+   the date are untouched, so nothing anybody wrote is at risk. */
+router.post('/:slug/memories/:id/media', media.upload, (req, res, next) => {
+  const found = db.resolveSession(req.get('x-build-token'), 'builder')
+  if (!found || found.gift.slug !== req.params.slug) {
+    return res.status(401).json({ error: 'El session mte3ek wfat. 3awed ekteb el mot de passe.' })
+  }
+  req.gift = found.gift
+  next()
+}, (req, res) => {
+  const memory = db.state.memories.find((m) => m.id === req.params.id && m.giftId === req.gift.id)
+  if (!memory) return res.status(404).json({ error: 'El dhikra hedhi ma3adhech mawjouda.' })
+  if (!req.file) return res.status(400).json({ error: 'Ma jech 7atta fichier.' })
+
+  /* It has to stay the kind of memory it already is — a photograph
+     cannot quietly become a film because of what was sent here. */
+  const kind = media.kindOf(req.file)
+  if (kind !== memory.kind) {
+    return res.status(400).json({ error: 'El fichier ejdid mouch nafs naw3 el dhikra.' })
+  }
+  const tooBig = media.checkSize(req.file, kind)
+  if (tooBig) return res.status(400).json({ error: tooBig })
+
+  const saved = media.saveFile(req.file)
+  const still = req.thumb ? media.saveFile(req.thumb) : null
+
+  /* The old blobs go only once the new ones are safely stored. */
+  if (memory.file) media.removeFile(memory.file)
+  if (memory.thumbFile) media.removeFile(memory.thumbFile)
+
+  memory.mediaUrl = saved.url
+  memory.file = saved.id
+  memory.thumbnail = still?.url || saved.url
+  memory.thumbFile = still?.id || null
+  memory.mimeType = req.file.mimetype || ''
+  memory.size = req.file.size || 0
+
+  db.touch(req.gift)
+  db.save()
+  answer(res, req.gift)
+})
+
 /** Throw one away, and its file with it. */
 router.delete('/:slug/memories/:id', guard, (req, res) => {
   const index = db.state.memories.findIndex((m) => m.id === req.params.id && m.giftId === req.gift.id)
@@ -198,6 +251,7 @@ router.delete('/:slug/memories/:id', guard, (req, res) => {
 
   const [removed] = db.state.memories.splice(index, 1)
   if (removed.file) media.removeFile(removed.file)
+  if (removed.thumbFile) media.removeFile(removed.thumbFile)
 
   db.resequence(db.memoriesOf(req.gift.id))
   db.touch(req.gift)
