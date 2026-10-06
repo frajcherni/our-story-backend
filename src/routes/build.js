@@ -43,9 +43,20 @@ const forBuilder = (m) => ({
   text: m.text,
   mediaUrl: m.mediaUrl,
   thumbnail: m.thumbnail || m.mediaUrl,
-  /* No still of its own means it was added before the workshop started
-     resizing, so the story is decoding the full original everywhere. */
-  heavy: Boolean(m.file) && !m.thumbFile && (m.kind === 'photo' || m.kind === 'video'),
+  /* No still of its own means the story is decoding the full photograph
+     everywhere — for the 64px hearts in the strip, for the two cards standing
+     either side of the stage, and for every tile of the grid. Measured on a
+     real album: a 1023×1537 photograph filling a 64×64 heart is 56× more
+     pixels than are shown and 6MB of bitmap held to do it.
+
+     This used to require `m.file`, which quietly excluded every memory whose
+     picture is not a workshop upload — anything seeded or carried over points
+     at its own URL with `file: null`, and those are exactly the oldest and
+     heaviest ones. What makes a memory heavy is having no still, not where its
+     picture came from, so that is what is asked. `LightenPhotos` fetches by
+     `mediaUrl` and sends the result back through `replaceMedia`, which is
+     happy either way. */
+  heavy: Boolean(m.mediaUrl) && !m.thumbFile && (m.kind === 'photo' || m.kind === 'video'),
   size: m.size,
   createdAt: m.createdAt,
 })

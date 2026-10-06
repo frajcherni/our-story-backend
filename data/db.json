@@ -31,23 +31,23 @@
       "message": "nhebek",
       "createdAt": "2026-08-30T14:37:19.068Z",
       "updatedAt": "2026-09-18T15:51:09.772Z",
-      "openedAt": "2026-09-25T15:15:54.117Z",
-      "opens": 29
+      "openedAt": "2026-10-05T18:15:34.479Z",
+      "opens": 30
     },
     {
       "id": "g_62e560b341",
       "slug": "7keyetna",
       "reference": "123",
       "status": "draft",
-      "tempHash": "fc8e2506e8df9a999d1076bd8e42ccaf933356eb93e0197d91a18abc7909a343",
-      "tempSalt": "72ca23fed5fff5e813378a787840b8b6",
+      "tempHash": "b4115779cf8a3d38cb6a7b6b770d1bb6f66476ff0ab8a1629772a9b19dc1c4a1",
+      "tempSalt": "0d4e899f9076dd12b305d305e2551860",
       "passHash": null,
       "passSalt": null,
       "title": "7keyetna",
       "subtitle": "",
       "message": "",
       "createdAt": "2026-09-18T15:49:03.002Z",
-      "updatedAt": "2026-09-18T15:49:25.664Z",
+      "updatedAt": "2026-10-05T18:14:26.788Z",
       "openedAt": null,
       "opens": 0
     }
